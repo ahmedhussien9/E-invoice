@@ -1,3 +1,12 @@
+::ng-deep {
+    @media screen and (max-width: 700px) {
+        .nav {
+            width: 21cm;
+        }
+    }
+ 
+}
+
 :host {
     .container {
         width: 21cm;
