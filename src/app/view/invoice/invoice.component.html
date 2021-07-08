@@ -38,8 +38,9 @@
             <thead>
                 <tr>
                     <th>رقم العنصر</th>
-                    <th style="border-right:1px solid #ccc;">وصف السلعة</th>
-                    <th> التكلفة</th>
+                    <th style="border-right:1px solid #ccc;">المنتج</th>
+                    <th style="border-right:1px solid #ccc;">الوصف</th>
+                    <th> السعر</th>
                     <th>الكمية / العدد</th>
                     <th>المبلغ</th>
                 </tr>
@@ -48,42 +49,55 @@
                 <tr>
                     <td>01.</td>
                     <td style="border-right:1px solid #ccc;">
-                        <p><strong>Item name</strong></p>
-                        <p>Item description ..........</p>
+                        <p><strong>حاسوب </strong></p>
+                        <!-- <p>Item description ..........</p> -->
                     </td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td style="border-right:1px solid #ccc;">
+                        <p>معالاجات من الجيل الرابع و الشاشة تعمل بمعيار الدقة QUAD HD </p>
+                        <!-- <p>Item description ..........</p> -->
+                    </td>
+                    <td>{{500 | currency:' USD '}}</td>
                     <td>1</td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td>{{500 | currency:' USD '}}</td>
                 </tr>
                 <tr>
                     <td>02.</td>
                     <td style="border-right:1px solid #ccc;">
-                        <p><strong>Item name</strong></p>
-                        <p>Item description ..........</p>
+                        <p><strong>قرص صلب خارجي</strong></p>
                     </td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td style="border-right:1px solid #ccc;">
+                        <p>بسعة تخزين ثلاثة تيرابيت</p>
+                        <!-- <p>Item description ..........</p> -->
+                    </td>
+                    <td>{{500 | currency:' USD '}}</td>
                     <td>1</td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td>{{500 | currency:' USD '}}</td>
                 </tr>
                 <tr>
                     <td>03.</td>
                     <td style="border-right:1px solid #ccc;">
-                        <p><strong>Item name</strong></p>
-                        <p>Item description ..........</p>
+                        <p><strong>جهاز ابل ماكبوك</strong></p>
                     </td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td style="border-right:1px solid #ccc;">
+                        <p>جهاز ابل ماكبوك</p>
+                        <!-- <p>Item description ..........</p> -->
+                    </td>
+                    <td>{{500 | currency:' USD '}}</td>
                     <td>1</td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td>{{500 | currency:' USD '}}</td>
                 </tr>
                 <tr>
                     <td>04.</td>
                     <td style="border-right:1px solid #ccc;">
-                        <p><strong>Item name</strong></p>
-                        <p>Item description ..........</p>
+                        <p><strong>ماوس كمبيوتر</strong></p>
                     </td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td style="border-right:1px solid #ccc;">
+                        <p>جينيوس ماوس</p>
+                        <!-- <p>Item description ..........</p> -->
+                    </td>
+                    <td>{{500 | currency:' USD '}}</td>
                     <td>1</td>
-                    <td>{{500 | currency:' EGP '}}</td>
+                    <td>{{500 | currency:' USD '}}</td>
                 </tr>
 
             </tbody>
@@ -92,12 +106,12 @@
             <div class="col-7">
                 <div class="payment-details">
                     <h6><strong>طريقة الدفع</strong></h6>
-                    <p><strong>باى بال:</strong> payments@blackstoneeit.com</p>
+                    <p><strong>باى بال:</strong> johndoe@blackstoneeit.com</p>
                     <p><strong>وي أكسبت:</strong> فيزا, مستر كارت, بايونير</p>
                 </div>
                 <div class="payment-details">
                     <h6><strong>الشروط والأحكام </strong></h6>
-                    <P> الوضع الحالي ، من خلال الأشياء والحركة التي تم إنشاؤها لأعمالك! يجب أن يكون هذا هو الحال بالنسبة لك.</P>
+                    <P> السداد مستحق على مبلغ الفاتورة بعد 30 يومًا من تسليم البضائع أو الخدمات.</P>
                 </div>
             </div>
             <div class="col-5 order-info" style="background: #f1f1f1">
@@ -106,7 +120,7 @@
                         <p>المجموع الفرعى</p>
                     </div>
                     <div class="right">
-                        <td>{{2000 | currency:' EGP '}}</td>
+                        <td>{{2000 | currency:' USD '}}</td>
                     </div>
                 </div>
                 <div class="order-cost-info">
@@ -115,7 +129,7 @@
                             (15%)</p>
                     </div>
                     <div class="right">
-                        <td>{{2300 | currency:' EGP '}}</td>
+                        <td>{{2300 | currency:' USD '}}</td>
                     </div>
                 </div>
                 <div class="order-cost-info">
@@ -123,7 +137,7 @@
                         <p>الخصم</p>
                     </div>
                     <div class="right">
-                        <td>{{200 | currency:' EGP '}}</td>
+                        <td>{{200 | currency:' USD '}}</td>
                     </div>
                 </div>
                 <div class="order-cost-info">
@@ -132,7 +146,7 @@
                             </strong></p>
                     </div>
                     <div class="right">
-                        <td>{{2100 | currency:' EGP '}}</td>
+                        <td>{{2100 | currency:' USD '}}</td>
                     </div>
                 </div>
             </div>
@@ -147,7 +161,7 @@
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <p>T:+1 (425) 283-3463</p>
+                            <p>009715634774</p>
                         </div>
                     </div>
                     <div class="company-info-row__data">
@@ -164,8 +178,10 @@
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <p>Seatle WA
-                                </p>
+                            <p>برج باركلين - مكتب الدور السادس 612 موقع:
+
+                                الخليج التجاري ، الإمارات العربية المتحدة
+                            </p>
                         </div>
                     </div>
                 </div>
