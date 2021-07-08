@@ -1,0 +1,100 @@
+<div class="container">
+    <div class="invoice-container">
+        <div class="header">
+            <h1 class="header__title">E-Invoice Sample Providers Qualifications
+            </h1>
+            <p class="header__text"><strong>Invoice sample</strong> please upload sample(s) of invoices that your
+                solution currently
+                generate
+                PDF
+                only <span class="header__text--pdf-icon"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></span>
+            </p>
+        </div>
+
+        <div class="body">
+
+            <div class="dropFile-container">
+                <app-upload-file (filesEvent)="droppedFiles('FIRST_SAMPLE', $event)"
+                    [sampleTitle]="'Sample 1 (Mandatroy)'" [filesCount]="firstSampleFiles.length"></app-upload-file>
+                <div class="dropFile-container__header">
+                    <!-- <button class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button> -->
+                </div>
+                <ng-container *ngIf="firstSampleFiles.length > 0">
+                    <div class="dropFile-details">
+                        <div class="dropFile-details__header">
+                            <h6>First samples files</h6>
+                        </div>
+                        <div *ngFor="let item of firstSampleFiles; let i=index" class="files-container">
+                            <app-upload-file-details [file]="item" (deleteFile)="deleteFile('FIRST_SAMPLE', i)"
+                                [number]="i + 1">
+                            </app-upload-file-details>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+
+
+
+            <div class="dropFile-container">
+                <app-upload-file (filesEvent)="droppedFiles('SECOND_SAMPLE', $event)"
+                    [sampleTitle]="'Sample 2 (Optional)'" [filesCount]="secondSampleFiles.length"></app-upload-file>
+                <div class="dropFile-container__header">
+                    <!-- <button class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                            </button> -->
+                </div>
+                <ng-container *ngIf="secondSampleFiles.length > 0">
+                    <div class="dropFile-details">
+                        <div class="dropFile-details__header">
+                            <h6>Second samples files</h6>
+                        </div>
+                        <div *ngFor="let item of secondSampleFiles; let i=index" class="files-container">
+                            <app-upload-file-details [file]="item" (deleteFile)="deleteFile('SECOND_SAMPLE', i)"
+                                [number]="i + 1">
+                            </app-upload-file-details>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+
+            <div class="dropFile-container">
+                <app-upload-file (filesEvent)="droppedFiles('THIRD_SAMPLE', $event)"
+                    [sampleTitle]="'Sample 3 (Optional)'" [filesCount]="thirdSampleFiles.length"></app-upload-file>
+                <div class="dropFile-container__header">
+                    <!-- <button class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                                    </button> -->
+                </div>
+                <ng-container *ngIf="thirdSampleFiles.length > 0">
+                    <div class="dropFile-details">
+                        <div class="dropFile-details__header">
+                            <h6>Third samples files</h6>
+                        </div>
+                        <div *ngFor="let item of thirdSampleFiles; let i=index" class="files-container">
+                            <app-upload-file-details [file]="item" (deleteFile)="deleteFile('THIRD_SAMPLE', i)"
+                                [number]="i + 1">
+                            </app-upload-file-details>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+
+            <!-- <div class="dropFile-container">
+                <app-upload-file (filesEvent)="droppedFiles('SECOND_SAMPLE', $event)"></app-upload-file>
+                <div class="dropFile-details">
+                    <div *ngFor="let item of secondSampleFiles; let i=index">
+                        <app-upload-file-details [file]="item"></app-upload-file-details>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropFile-container">
+                <app-upload-file (filesEvent)="droppedFiles('THIRD_SAMPLE',$event)"></app-upload-file>
+                <div class="dropFile-details">
+                    <div *ngFor="let item of thirdSampleFiles; let i=index">
+                        <app-upload-file-details [file]="item"></app-upload-file-details>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>

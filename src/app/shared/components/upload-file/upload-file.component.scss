@@ -1,0 +1,61 @@
+.center {
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .drop-area {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        background: #fff;
+        border-radius: 30px;
+        width: 100%;
+    }
+}
+::ng-deep {
+    .ngx-file-drop {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            .icon {
+                color: #1b9cfc;
+                font-size: 50px;
+                margin: 0rem 0rem 0rem 0rem;
+            }
+            .title {
+                font-size: 18px;
+                color: #0c2461;
+                font-family: Lato-Regular;
+                a {
+                    font-weight: bold;
+                    color: #1b9cfc;
+                    cursor: pointer;
+                    &:hover {
+                        color: #1b9cfc;
+                    }
+                }
+            }
+            .count {
+                font-size: 12px;
+                color: #000;
+            }
+            .upload-button {
+            }
+        }
+
+        &__drop-zone {
+            border: 2px dotted #dfe4ea !important;
+            border-radius: 30px;
+            height: 250px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+    }
+}
+.hasFiles {
+    background-color: #f8f9d2 !important;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%) !important;
+}

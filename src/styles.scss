@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~font-awesome/scss/font-awesome.scss";
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(./assets/fonts/Lato/Lato-Regular.ttf) format("truetype"),
+        url(./assets/fonts/Lato/Lato-Regular.ttf) format("truetype");
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 95%;
+    font-family: Lato-Regular;
+    background: #fafafa !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Lato-Regular;
+    margin-bottom: 0px;
+}
+
+button {
+    margin-left: auto;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@media screen and (max-width: 600px) {
+    html,
+    body {
+        font-size: 70% !important;
+    }
+}

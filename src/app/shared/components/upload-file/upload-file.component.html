@@ -1,0 +1,29 @@
+<div class="center">
+    <div class="drop-area" [class.hasFiles]="filesCount > 0">
+        <ngx-file-drop dropZoneLabel="Drop files here" (onFileDrop)="dropped($event)" (onFileOver)="fileOver($event)"
+            (onFileLeave)="fileLeave($event)">
+            <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+                <i class="fa fa-cloud-upload icon" aria-hidden="true"></i>
+
+                <h3 class="title">Drag and drop files or <a (click)="openFileSelector()">Browse</a></h3>
+                <h6>{{sampleTitle}}</h6>
+                <h5 class="count" *ngIf="filesCount > 0">Files no. : <strong>{{filesCount}}</strong></h5>
+            </ng-template>
+        </ngx-file-drop>
+    </div>
+
+    <!-- <div class="upload-table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody class="upload-name-style">
+                <tr *ngFor="let item of files; let i=index">
+                    <td><strong>{{ item.relativePath }}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+</div>
