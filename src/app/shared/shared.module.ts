@@ -8,6 +8,7 @@ import { NgxFileDropModule } from "ngx-file-drop";
 import { UploadFileDetailsComponent } from './components/upload-file-details/upload-file-details.component';
 import { FileSizePipe } from "./pipe/fileSize.pipe";
 import { RouterModule } from "@angular/router";
+import { ArabicNumberPipe } from "./pipe/numbers.pipe";
 
 
 
@@ -24,6 +25,7 @@ import { RouterModule } from "@angular/router";
     declarations: [
         // Pipe
         FileSizePipe,
+        ArabicNumberPipe,
         NavbarComponent,
         UploadFileComponent,
         UploadFileDetailsComponent,
@@ -37,6 +39,7 @@ import { RouterModule } from "@angular/router";
         RouterModule,
         // Pipe
         FileSizePipe,
+        ArabicNumberPipe,
         // components
         NavbarComponent,
         UploadFileComponent,

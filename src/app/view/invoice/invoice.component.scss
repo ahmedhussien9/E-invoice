@@ -1,127 +1,146 @@
-.container {
-    width: 21cm;
-    min-height: 29.7cm;
-}
-p {
-    font-size: 12px;
-    margin-bottom: 0px;
-}
-.payment-details {
-    margin-top: 2rem;
-}
-.table {
-}
-th {
-    &:not(:first-child, :nth-of-type(2)) {
-        background: #f1f1f1;
+:host {
+    .container {
+        width: 21cm;
+        min-height: 29.7cm;
     }
-}
-td {
-    &:nth-child(1),
-    &:nth-child(2) {
-        background: #f1f1f1;
+    p {
+        font-size: 12px;
+        margin-bottom: 0px;
     }
-}
-td {
-    vertical-align: middle;
-}
-.order-info {
-    padding: 10px 10px;
-    height: 140px;
-}
-.order-cost-info {
-    padding: 5px 0px;
-    display: flex;
-    &:not(:last-child) {
-        border-bottom: 1px solid #fff;
+    .payment-details {
+        margin-top: 2rem;
     }
-    .left,
-    .right {
-        color: #000;
+    .table {
     }
-    .right {
-        margin-left: auto;
+    th {
+        &:not(:first-child, :nth-of-type(2)) {
+            background: #f1f1f1;
+        }
     }
-}
-.invoice-data {
-    margin-bottom: 0px;
-    span {
-        width: 100px;
-        margin-right: 20px;
-        display: inline-block;
+    td {
+        &:nth-child(1),
+        &:nth-child(2) {
+            background: #f1f1f1;
+        }
     }
-}
-.invoice {
-    background: #fff;
-    width: 100%;
-    padding: 50px;
-}
-
-.logo {
-    height: 90px;
-}
-
-.document-type {
-    color: #444;
-}
-
-.conditions {
-    font-size: 0.7em;
-    color: #666;
-}
-
-.bottom-page {
-    font-size: 0.7em;
-}
-
-td {
-    font-size: 12px !important;
-}
-
-.company-info {
-    margin: 1.5rem 0rem;
-    h5 {
-        font-weight: bold;
-        padding: 0.8rem 0rem;
-        border-bottom: 1px solid #f1f1f1;
+    td {
+        vertical-align: middle;
     }
-    .company-info-row {
+    .order-info {
+        padding: 10px 10px;
+        height: 140px;
+    }
+    .order-cost-info {
+        padding: 5px 0px;
         display: flex;
-        justify-content: space-between;
-        &__data {
-            display: flex;
-            align-items: center;
-            .icon {
-                margin-right: 1rem;
-                font-size: 25px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #fff;
+        }
+        .left,
+        .right {
+            color: #000;
+        }
+        .right {
+            margin-left: auto;
+            [dir=rtl] & {
+                margin-right: auto;
+                margin-left: initial;
             }
         }
     }
-}
-
-.btn {
-    margin: 1.5rem 0rem;
-    background: rgb(165, 4, 12);
-    color: #fff;
-    font-size: 10px;
-    font-weight: bold;
-    &:focus {
-        outline: none;
-        border-color: none;
-        box-shadow: none;
+    .invoice-data {
+        margin-bottom: 0px;
+        span {
+            width: 120px;
+            margin-right: 20px;
+            display: inline-block;
+            [dir=rtl] & {
+                margin-right: initial;
+                margin-left: 20px;
+            }
+        }
     }
-}
-@media print {
-    body * {
-        visibility: hidden;
+    .invoice {
+        background: #fff;
+        width: 100%;
+        padding: 50px;
     }
-    #section-to-print,
-    #section-to-print * {
-        visibility: visible;
+    
+    .logo {
+        height: 90px;
     }
-    #section-to-print {
-        position: absolute;
-        left: 0;
-        top: 0;
+    
+    .document-type {
+        color: #444;
+    }
+    
+    .conditions {
+        font-size: 0.7em;
+        color: #666;
+    }
+    
+    .bottom-page {
+        font-size: 0.7em;
+    }
+    
+    td {
+        font-size: 12px !important;
+        text-align: center;
+        &:nth-of-type(3) {
+            width: 220px;
+        }
+    }
+    
+    .company-info {
+        margin: 1.5rem 0rem;
+        h5 {
+            font-weight: bold;
+            padding: 0.8rem 0rem;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .company-info-row {
+            display: flex;
+            justify-content: space-between;
+            &__data {
+                width: 33.3%;
+                display: flex;
+                align-items: center;
+                .icon {
+                    margin-right: 1rem;
+                    font-size: 25px;
+                    [dir=rtl] & {
+                        margin-right: initial;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .btn {
+        margin: 1.5rem 0rem;
+        background: rgb(165, 4, 12);
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        &:focus {
+            outline: none;
+            border-color: none;
+            box-shadow: none;
+        }
+    }
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+        #section-to-print,
+        #section-to-print * {
+            visibility: visible;
+        }
+        #section-to-print {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
     }
 }

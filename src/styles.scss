@@ -14,11 +14,23 @@ body {
         url(./assets/fonts/Lato/Lato-Regular.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: IBMPlexArabic;
+    src: url(./assets/fonts/IBMPlexArabic-Text.ttf) format("truetype"),
+        url(./assets/fonts/IBMPlexArabic-Text.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: DroidArabic;
+    src: url(./assets/fonts/Droid.Arabic.Kufi.ttf) format("truetype"),
+      url(./assets/fonts/Droid.Arabic.Kufi.ttf) format("truetype");
+  }
+
 html,
 body {
     height: 100%;
     font-size: 95%;
-    font-family: Lato-Regular;
+    font-family: DroidArabic;
     background: #fafafa !important;
 }
 
@@ -29,7 +41,7 @@ h4,
 h5,
 h6,
 p {
-    font-family: Lato-Regular;
+    font-family: DroidArabic;
     margin-bottom: 0px;
 }
 
