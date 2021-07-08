@@ -6,30 +6,30 @@
                 <img [src]="'assets/icons/bk-logo.png'" class="logo">
             </div>
             <div class="col-5">
-                <h1 class="document-type display-8"><strong>INVOICE</strong></h1>
-                <p class="text-right invoice-data"><strong><span>Date #:</span></strong> MM/DD/YYYY</p>
-                <p class="text-right invoice-data"><strong><span>Inovice #:</span></strong> 00001</p>
-                <p class="text-right invoice-data"><strong><span>Customer #:</span></strong> CUST123</p>
-                <p class="text-right invoice-data"><strong><span>Purchase Order #:</span></strong> 000002</p>
-                <p class="text-right invoice-data"><strong><span>Payment due by:</span></strong> MM/DD/YYYY</p>
+                <h1 class="document-type display-8"><strong>الفاتورة</strong></h1>
+                <p class="text-right invoice-data"><strong><span>التاريخ :</span></strong> 07/05/2021</p>
+                <p class="text-right invoice-data"><strong><span>رقم الفاتورة :</span></strong> 00001</p>
+                <p class="text-right invoice-data"><strong><span>رقم العميل :</span></strong> CUST123</p>
+                <p class="text-right invoice-data"><strong><span>رقم طلب الشراء :</span></strong> 000002</p>
+                <p class="text-right invoice-data"><strong><span>تاريخ السداد المستحق:</span></strong> 07/05/2021</p>
                 <br>
                 <br>
             </div>
         </div>
         <div class="row">
             <div class="col-7">
-                <h6><strong>Billed To</strong></h6>
-                <p>Ahmed Khattab</p>
-                <p>Cairo, State, Egypt</p>
-                <p>Zip Code</p>
-                <p>+20102424444</p>
+                <h6><strong>الدفع إلى :</strong></h6>
+                <p>أحمد خطاب</p>
+                <p>القاهرة ، مصر</p>
+                <p>الرمز البريدى</p>
+                <p>201000-22-0707</p>
             </div>
             <div class="col-5">
-                <h6><strong>Shipped To</strong></h6>
-                <p>Ahmed Khattab</p>
-                <p>Cairo, State, Egypt</p>
-                <p>Zip Code</p>
-                <p>+20102424444</p>
+                <h6><strong>تم شحنها إلى :</strong></h6>
+                <p>أحمد خطاب</p>
+                <p>القاهرة ، مصر</p>
+                <p>الرمز البريدى</p>
+                <p>201000-22-0707</p>
             </div>
         </div>
         <br>
@@ -37,11 +37,11 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>No.</th>
-                    <th style="border-right:1px solid #ccc;">Item Description</th>
-                    <th>Unit Cost</th>
-                    <th>Qty/ HR Rate</th>
-                    <th>Amount</th>
+                    <th>رقم العنصر</th>
+                    <th style="border-right:1px solid #ccc;">وصف السلعة</th>
+                    <th> التكلفة</th>
+                    <th>الكمية / العدد</th>
+                    <th>المبلغ</th>
                 </tr>
             </thead>
             <tbody>
@@ -51,9 +51,9 @@
                         <p><strong>Item name</strong></p>
                         <p>Item description ..........</p>
                     </td>
-                    <td>500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                     <td>1</td>
-                    <td class="text-right">500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                 </tr>
                 <tr>
                     <td>02.</td>
@@ -61,9 +61,9 @@
                         <p><strong>Item name</strong></p>
                         <p>Item description ..........</p>
                     </td>
-                    <td>500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                     <td>1</td>
-                    <td class="text-right">500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                 </tr>
                 <tr>
                     <td>03.</td>
@@ -71,9 +71,9 @@
                         <p><strong>Item name</strong></p>
                         <p>Item description ..........</p>
                     </td>
-                    <td>500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                     <td>1</td>
-                    <td class="text-right">500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                 </tr>
                 <tr>
                     <td>04.</td>
@@ -81,9 +81,9 @@
                         <p><strong>Item name</strong></p>
                         <p>Item description ..........</p>
                     </td>
-                    <td>500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                     <td>1</td>
-                    <td class="text-right">500,00€</td>
+                    <td>{{500 | currency:' EGP '}}</td>
                 </tr>
 
             </tbody>
@@ -91,48 +91,48 @@
         <div class="row">
             <div class="col-7">
                 <div class="payment-details">
-                    <h6><strong>Payment method</strong></h6>
-                    <p><strong>Paypal:</strong> payments@blackstoneeit.com</p>
-                    <p><strong>Card payment we Accept:</strong> Visa, Mastercard, Payoneer</p>
+                    <h6><strong>طريقة الدفع</strong></h6>
+                    <p><strong>باى بال:</strong> payments@blackstoneeit.com</p>
+                    <p><strong>وي أكسبت:</strong> فيزا, مستر كارت, بايونير</p>
                 </div>
                 <div class="payment-details">
-                    <h6><strong>Terms & Condition</strong></h6>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi, porro illo et voluptas ut
-                        eos est obcaecati! Quo totam cupiditate obcaecati laboriosam voluptatem beatae rem a est
-                        veritatis hic.</P>
+                    <h6><strong>الشروط والأحكام </strong></h6>
+                    <P> الوضع الحالي ، من خلال الأشياء والحركة التي تم إنشاؤها لأعمالك! يجب أن يكون هذا هو الحال بالنسبة لك.</P>
                 </div>
             </div>
             <div class="col-5 order-info" style="background: #f1f1f1">
                 <div class="order-cost-info">
                     <div class="left">
-                        <p>Sub Total</p>
+                        <p>المجموع الفرعى</p>
                     </div>
                     <div class="right">
-                        <p>$ 15190.00</p>
+                        <td>{{2000 | currency:' EGP '}}</td>
                     </div>
                 </div>
                 <div class="order-cost-info">
                     <div class="left">
-                        <p>Tax Vat (15%)</p>
+                        <p>ضريبة القيمة المضافة
+                            (15%)</p>
                     </div>
                     <div class="right">
-                        <p>$ 2278.00</p>
+                        <td>{{2300 | currency:' EGP '}}</td>
                     </div>
                 </div>
                 <div class="order-cost-info">
                     <div class="left">
-                        <p>Discount</p>
+                        <p>الخصم</p>
                     </div>
                     <div class="right">
-                        <p>$ 228.00</p>
+                        <td>{{200 | currency:' EGP '}}</td>
                     </div>
                 </div>
                 <div class="order-cost-info">
                     <div class="left">
-                        <p><strong>Grand Total</strong></p>
+                        <p><strong>المجموع الإجمالي
+                            </strong></p>
                     </div>
                     <div class="right">
-                        <p><strong>$ 17898.00</strong></p>
+                        <td>{{2100 | currency:' EGP '}}</td>
                     </div>
                 </div>
             </div>
@@ -140,15 +140,14 @@
 
         <div class="row">
             <div class="company-info">
-                <h5>Company Information</h5>
+                <h5>معلومات الشركة</h5>
                 <div class="company-info-row">
                     <div class="company-info-row__data">
                         <div class="icon">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <p>+1-298-555-0163</p>
-                            <p>+1-298-555-0163</p>
+                            <p>T:+1 (425) 283-3463</p>
                         </div>
                     </div>
                     <div class="company-info-row__data">
@@ -156,8 +155,8 @@
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <p>+1-298-555-0163</p>
-                            <p>+1-298-555-0163</p>
+                            <p>Sales@BlackStoneeIT.com
+                            </p>
                         </div>
                     </div>
                     <div class="company-info-row__data">
@@ -165,8 +164,8 @@
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <p>+1-298-555-0163</p>
-                            <p>+1-298-555-0163</p>
+                            <p>Seatle WA
+                                </p>
                         </div>
                     </div>
                 </div>
